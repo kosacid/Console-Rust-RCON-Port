@@ -9,3 +9,6 @@ remember to edit your server details
     SERVER_IP = "127.0.0.1"
     RCON_PORT = 29316
     RCON_PASSWORD = "password"
+
+for linux just use the command in the console
+python filename.py &
