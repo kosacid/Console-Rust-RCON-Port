@@ -11,4 +11,5 @@ remember to edit your server details
     RCON_PASSWORD = "password"
 
 for linux just use the command in the console
+
 python filename.py &
