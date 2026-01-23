@@ -1,7 +1,9 @@
 install python then for windows open a cmd or for linux open a console then type the following commands 
 
 pip install discord.py
+
 pip install python-dotenv
+
 pip install websockets
 
 this is easy to convert to C++ or C#
