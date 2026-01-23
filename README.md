@@ -1,15 +1,12 @@
-install python then do a 
+install python then for windows open a cmd or for linux open a console then type the following commands 
+pip install discord.py
+pip install python-dotenv
 pip install websockets
-and if you want to istall a discord bot
-pip install discord
 
 this is easy to convert to C++ or C#
-remember to edit your server details 
-# Your server details
-    SERVER_IP = "127.0.0.1"
-    RCON_PORT = 29316
-    RCON_PASSWORD = "password"
+remember to edit your discord details in the .env file 
+and if you want to run the Basic_Console.py or the Listen.py you have to edit the file manualy with the server details
 
-for linux just use the command in the console
-
-python filename.py &
+for windows use the .bat files to strart them 
+for linux just make a start.sh
+and add the files 
