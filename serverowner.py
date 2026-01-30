@@ -3,7 +3,7 @@ import asyncio
 import os
 import json
 import websockets
-from typing import Optional
+from typing import Optional, Dict
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -24,6 +24,8 @@ class RawRCONClient:
         self.websocket: Optional[websockets.WebSocketClientProtocol] = None
         self.command_counter = 1
         self.is_connected = False
+        self.pending_responses: Dict[int, asyncio.Future] = {}
+        self.receive_task = None
     
     async def connect(self) -> bool:
         """Establish connection to server"""
@@ -33,20 +35,57 @@ class RawRCONClient:
             self.is_connected = True
             print("Connected successfully")
             
-            # Send initial command to start receiving messages
-            init_data = {
-                "Message": "",
-                "Identifier": 1,
-                "Type": "Command",
-                "Stacktrace": None
-            }
-            await self.websocket.send(json.dumps(init_data))
+            # Start receiving messages in background
+            self.receive_task = asyncio.create_task(self._receive_messages())
             
             return True
         except Exception as e:
             print(f"Connection failed: {e}")
             self.is_connected = False
             return False
+    
+    async def _receive_messages(self):
+        """Continuously receive messages from server"""
+        try:
+            while self.is_connected and self.websocket:
+                try:
+                    response = await asyncio.wait_for(self.websocket.recv(), timeout=1.0)
+                    await self._process_response(response)
+                except asyncio.TimeoutError:
+                    continue
+                except websockets.exceptions.ConnectionClosed:
+                    print("WebSocket connection closed")
+                    self.is_connected = False
+                    break
+        except Exception as e:
+            print(f"Error in receive_messages: {e}")
+            self.is_connected = False
+    
+    async def _process_response(self, response: str):
+        """Process response from server"""
+        try:
+            response_data = json.loads(response)
+            identifier = response_data.get("Identifier", -1)
+            message = response_data.get("Message", "")
+            
+            # Clean up the message
+            if isinstance(message, str):
+                message = message.replace("\u0000", "").strip()
+            
+            print(f"Received response for ID {identifier}: {repr(message[:100])}")
+            
+            # Check if we're waiting for this response
+            if identifier in self.pending_responses:
+                future = self.pending_responses[identifier]
+                if not future.done():
+                    future.set_result(message)
+                del self.pending_responses[identifier]
+            else:
+                # Log unexpected responses
+                print(f"Unexpected response for ID {identifier}")
+                
+        except json.JSONDecodeError:
+            print(f"Non-JSON response: {repr(response[:100])}")
     
     async def send_raw_command(self, command: str) -> str:
         """Send raw command to WebSocket RCON server and return response"""
@@ -56,6 +95,10 @@ class RawRCONClient:
                     return "❌ Failed to connect to server"
             
             current_id = self.command_counter
+            
+            # Create a future to wait for the response
+            response_future = asyncio.Future()
+            self.pending_responses[current_id] = response_future
             
             command_data = {
                 "Message": command,
@@ -67,28 +110,31 @@ class RawRCONClient:
             await self.websocket.send(json.dumps(command_data))
             print(f"Sent command (ID {current_id}): {command}")
             
-            # Wait for response
-            response = await self.websocket.recv()
-            response_data = json.loads(response)
-            
-            message = response_data.get("Message", "")
-            if isinstance(message, str):
-                message = message.replace("\u0000", "").strip()
-            
-            self.command_counter += 1
-            return message
+            # Wait for response with timeout
+            try:
+                response = await asyncio.wait_for(response_future, timeout=10.0)
+                self.command_counter += 1
+                return response if response else "✅ Command executed (empty response)"
+            except asyncio.TimeoutError:
+                del self.pending_responses[current_id]
+                self.command_counter += 1
+                return "⏰ Command timed out - no response received"
             
         except Exception as e:
             print(f"Error sending command: {e}")
+            if current_id in self.pending_responses:
+                del self.pending_responses[current_id]
             self.is_connected = False
             return f"❌ Error: {str(e)}"
     
     async def close(self) -> None:
         """Close the connection"""
+        self.is_connected = False
+        if self.receive_task:
+            self.receive_task.cancel()
         if self.websocket:
             await self.websocket.close()
             self.websocket = None
-            self.is_connected = False
 
 # Discord bot setup
 intents = discord.Intents.default()
@@ -139,9 +185,12 @@ async def on_message(message):
                 response = response[:1900] + "\n... (truncated)"
             
             # Send response back to Discord
-            await message.reply(f"```\n{response}\n```", mention_author=False)
-        else:
-            await message.reply("✅ Command sent (no response received)", mention_author=False)
+            if response.startswith("❌") or response.startswith("⏰"):
+                # Error message
+                await message.reply(response, mention_author=False)
+            else:
+                # Normal response in code block
+                await message.reply(f"```\n{response}\n```", mention_author=False)
 
 # Run the bot
 bot.run(TOKEN)
