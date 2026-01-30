@@ -2,5 +2,5 @@
 title Rust Discord Zones Bot
 echo Starting Rust Discord Bot...
 echo.
-python Zones.py
+python zones.py
 pause
