@@ -140,94 +140,94 @@ class EmoteManager:
         """Get list of ALL emotes"""
         return [
             # Combat slots
-            "d11_quick_chat_combat_slot_7",
-            "d11_quick_chat_combat_slot_6",
-            "d11_quick_chat_combat_slot_5",
-            "d11_quick_chat_combat_slot_4",
-            "d11_quick_chat_combat_slot_3",
-            "d11_quick_chat_combat_slot_2",
-            "d11_quick_chat_combat_slot_1",
-            "d11_quick_chat_combat_slot_0",
-            
-            # Building slots
-            "d11_quick_chat_building_slot_7",
-            "d11_quick_chat_building_slot_6",
-            "d11_quick_chat_building_slot_5",
-            "d11_quick_chat_building_slot_4",
-            "d11_quick_chat_building_slot_3",
-            "d11_quick_chat_building_slot_2",
-            "d11_quick_chat_building_slot_1",
-            "d11_quick_chat_building_slot_0",
-            
-            # Activities phrase format
-            "d11_quick_chat_activities_phrase_format d11_Medicine",
-            "d11_quick_chat_activities_phrase_format d11_Metal_Fragments",
-            "d11_quick_chat_activities_phrase_format d11_Scrap",
-            "d11_quick_chat_activities_phrase_format d11_Water",
-            "d11_quick_chat_activities_phrase_format d11_Food",
-            "d11_quick_chat_activities_phrase_format d11_Metal",
-            "d11_quick_chat_activities_phrase_format d11_Wood",
-            "d11_quick_chat_activities_phrase_format d11_Stone",
-            
-            # Questions slots
-            "d11_quick_chat_questions_slot_7",
-            "d11_quick_chat_questions_slot_6",
-            "d11_quick_chat_questions_slot_5",
-            "d11_quick_chat_questions_slot_4",
-            "d11_quick_chat_questions_slot_3",
-            "d11_quick_chat_questions_slot_2",
-            "d11_quick_chat_questions_slot_1",
-            "d11_quick_chat_questions_slot_0",
-            
-            # Responses slots
-            "d11_quick_chat_responses_slot_7",
-            "d11_quick_chat_responses_slot_6",
-            "d11_quick_chat_responses_slot_5",
-            "d11_quick_chat_responses_slot_4",
-            "d11_quick_chat_responses_slot_3",
-            "d11_quick_chat_responses_slot_2",
-            "d11_quick_chat_responses_slot_1",
-            "d11_quick_chat_responses_slot_0",
-            
-            # Orders slots
-            "d11_quick_chat_orders_slot_7",
-            "d11_quick_chat_orders_slot_6",
-            "d11_quick_chat_orders_slot_5",
-            "d11_quick_chat_orders_slot_4",
-            "d11_quick_chat_orders_slot_3",
-            "d11_quick_chat_orders_slot_2",
-            "d11_quick_chat_orders_slot_1",
-            "d11_quick_chat_orders_slot_0",
-            
-            # Location slots
-            "d11_quick_chat_location_slot_7",
-            "d11_quick_chat_location_slot_6",
-            "d11_quick_chat_location_slot_5",
-            "d11_quick_chat_location_slot_4",
-            "d11_quick_chat_location_slot_3",
-            "d11_quick_chat_location_slot_2",
-            "d11_quick_chat_location_slot_1",
-            "d11_quick_chat_location_slot_0",
-            
-            # I need phrase format
-            "d11_quick_chat_i_need_phrase_format d11_Scrap",
-            "d11_quick_chat_i_need_phrase_format metal.refined",
-            "d11_quick_chat_i_need_phrase_format d11_Metal_Fragments",
-            "d11_quick_chat_i_need_phrase_format stones",
-            "d11_quick_chat_i_need_phrase_format d11_Wood",
-            "d11_quick_chat_i_need_phrase_format d11_Water",
-            "d11_quick_chat_i_need_phrase_format d11_Food",
-            "d11_quick_chat_i_need_phrase_format lowgradefuel",
-            
-            # I have phrase format
-            "d11_quick_chat_i_have_phrase_format d11_Scrap",
-            "d11_quick_chat_i_have_phrase_format lowgradefuel",
-            "d11_quick_chat_i_have_phrase_format d11_Food",
-            "d11_quick_chat_i_have_phrase_format d11_Water",
-            "d11_quick_chat_i_have_phrase_format bow.hunting",
-            "d11_quick_chat_i_have_phrase_format pickaxe",
-            "d11_quick_chat_i_have_phrase_format hatchet",
-            "d11_quick_chat_i_have_phrase_format metal.refined"
+    "d11_quick_chat_combat_slot_0", 
+    "d11_quick_chat_combat_slot_1", 
+    "d11_quick_chat_combat_slot_2", 
+    "d11_quick_chat_combat_slot_3", 
+    "d11_quick_chat_combat_slot_4", 
+    "d11_quick_chat_combat_slot_5", 
+    "d11_quick_chat_combat_slot_6", 
+    "d11_quick_chat_combat_slot_7",
+    
+    # Building slots
+    "d11_quick_chat_building_slot_0", 
+    "d11_quick_chat_building_slot_1", 
+    "d11_quick_chat_building_slot_2", 
+    "d11_quick_chat_building_slot_3", 
+    "d11_quick_chat_building_slot_4", 
+    "d11_quick_chat_building_slot_5", 
+    "d11_quick_chat_building_slot_6", 
+    "d11_quick_chat_building_slot_7",
+    
+    # Activities phrase format
+    "d11_quick_chat_activities_phrase_format d11_Stone",
+    "d11_quick_chat_activities_phrase_format d11_Wood",
+    "d11_quick_chat_activities_phrase_format d11_Metal",
+    "d11_quick_chat_activities_phrase_format d11_Food",
+    "d11_quick_chat_activities_phrase_format d11_Water",
+    "d11_quick_chat_activities_phrase_format d11_Scrap",
+    "d11_quick_chat_activities_phrase_format d11_Metal_Fragments",
+    "d11_quick_chat_activities_phrase_format d11_Medicine",
+    
+    # Questions slots
+    "d11_quick_chat_questions_slot_0", 
+    "d11_quick_chat_questions_slot_1", 
+    "d11_quick_chat_questions_slot_2", 
+    "d11_quick_chat_questions_slot_3", 
+    "d11_quick_chat_questions_slot_4", 
+    "d11_quick_chat_questions_slot_5", 
+    "d11_quick_chat_questions_slot_6", 
+    "d11_quick_chat_questions_slot_7",
+    
+    # Responses slots
+    "d11_quick_chat_responses_slot_0", 
+    "d11_quick_chat_responses_slot_1", 
+    "d11_quick_chat_responses_slot_2", 
+    "d11_quick_chat_responses_slot_3", 
+    "d11_quick_chat_responses_slot_4", 
+    "d11_quick_chat_responses_slot_5", 
+    "d11_quick_chat_responses_slot_6", 
+    "d11_quick_chat_responses_slot_7",
+    
+    # Orders slots
+    "d11_quick_chat_orders_slot_0", 
+    "d11_quick_chat_orders_slot_1", 
+    "d11_quick_chat_orders_slot_2", 
+    "d11_quick_chat_orders_slot_3", 
+    "d11_quick_chat_orders_slot_4", 
+    "d11_quick_chat_orders_slot_5", 
+    "d11_quick_chat_orders_slot_6", 
+    "d11_quick_chat_orders_slot_7",
+    
+    # Location slots
+    "d11_quick_chat_location_slot_0", 
+    "d11_quick_chat_location_slot_1", 
+    "d11_quick_chat_location_slot_2", 
+    "d11_quick_chat_location_slot_3", 
+    "d11_quick_chat_location_slot_4", 
+    "d11_quick_chat_location_slot_5", 
+    "d11_quick_chat_location_slot_6", 
+    "d11_quick_chat_location_slot_7", 
+    
+    # I need phrase format
+    "d11_quick_chat_i_need_phrase_format scrap",
+    "d11_quick_chat_i_need_phrase_format lowgradefuel",
+    "d11_quick_chat_i_need_phrase_format d11_Food",
+    "d11_quick_chat_i_need_phrase_format water",
+    "d11_quick_chat_i_need_phrase_format wood",
+    "d11_quick_chat_i_need_phrase_format stones",
+    "d11_quick_chat_i_need_phrase_format metal.fragments",
+    "d11_quick_chat_i_need_phrase_format metal.refined",
+    
+    # I have phrase format
+    "d11_quick_chat_i_have_phrase_format scrap",
+    "d11_quick_chat_i_have_phrase_format lowgradefuel",
+    "d11_quick_chat_i_have_phrase_format d11_Food",
+    "d11_quick_chat_i_have_phrase_format water",
+    "d11_quick_chat_i_have_phrase_format bow.hunting",
+    "d11_quick_chat_i_have_phrase_format pickaxe",
+    "d11_quick_chat_i_have_phrase_format hatchet",
+    "d11_quick_chat_i_have_phrase_format metal.refined"
         ]
     
     def _load_configurations(self):
@@ -310,8 +310,8 @@ class EmoteManager:
             
             # Add example configurations for some emotes
             # Wood request (60 minute cooldown with commands)
-            if "d11_quick_chat_i_need_phrase_format d11_Wood" in default_emotes_data:
-                default_emotes_data["d11_quick_chat_i_need_phrase_format d11_Wood"] = {
+            if "d11_quick_chat_i_need_phrase_format wood" in default_emotes_data:
+                default_emotes_data["d11_quick_chat_i_need_phrase_format wood"] = {
                     'time': '60',
                     'commands': [
                         'giveto {player} wood 3000',
@@ -334,15 +334,15 @@ class EmoteManager:
                 }
             
             # Metal fragments request (30 minute cooldown)
-            if "d11_quick_chat_i_need_phrase_format d11_Metal_Fragments" in default_emotes_data:
-                default_emotes_data["d11_quick_chat_i_need_phrase_format d11_Metal_Fragments"] = {
+            if "d11_quick_chat_i_need_phrase_format metal.fragments" in default_emotes_data:
+                default_emotes_data["d11_quick_chat_i_need_phrase_format metal.fragments"] = {
                     'time': '30',
                     'commands': ['giveto {player} metal.fragments 1000']
                 }
             
             # Water request (20 minute cooldown)
-            if "d11_quick_chat_i_need_phrase_format d11_Water" in default_emotes_data:
-                default_emotes_data["d11_quick_chat_i_need_phrase_format d11_Water"] = {
+            if "d11_quick_chat_i_need_phrase_format water" in default_emotes_data:
+                default_emotes_data["d11_quick_chat_i_need_phrase_format water"] = {
                     'time': '20',
                     'commands': ['giveto {player} water 5']
                 }
@@ -355,8 +355,8 @@ class EmoteManager:
                 }
             
             # Scrap request (45 minute cooldown)
-            if "d11_quick_chat_i_need_phrase_format d11_Scrap" in default_emotes_data:
-                default_emotes_data["d11_quick_chat_i_need_phrase_format d11_Scrap"] = {
+            if "d11_quick_chat_i_need_phrase_format scrap" in default_emotes_data:
+                default_emotes_data["d11_quick_chat_i_need_phrase_format scrap"] = {
                     'time': '45',
                     'commands': ['giveto {player} scrap 500']
                 }
