@@ -198,13 +198,7 @@ async def on_message(message):
                 if len(parts) < 2:
                     await message.channel.send("""
 ❌ **Incorrect format for createcustomzone**
-**Usage:** `!createcustomzone "Name" (x,y,z) rotation shape size pvp npcdamage radiation buildingdamage building`
-
-**📦 BOX ZONE EXAMPLE:**
-`!createcustomzone "Test" (500,35,90) 45 Box (225,150,150) 1 0 52 1 0`
-
-**🔵 SPHERE ZONE EXAMPLE:**
-`!createcustomzone "Safe Area" (100,50,200) 0 Sphere 75 0 0 0 0 1`
+**Usage:** `!createcustomzone "Test" x,y,z rotation shape size pvp npcdamage radiation buildingdamage building`
 """)
                     return
                 
@@ -348,14 +342,25 @@ async def on_message(message):
         elif content == 'help':
             help_text = """
 **🏗️ ZONE COMMANDS:**
-• `!createcustomzone "Name" x,y,z rotation shape size pvp npcdamage radiation buildingdamage building`
-  Box: `!createcustomzone "Test" 500,35,90 45 Box 225,150,150 1 0 52 1 0`
-  Sphere: `!createcustomzone "Safe" 100,50,200 0 Sphere 75 0 0 0 0 1`
+  `!createcustomzone "Test" x,y,z rotation shape size pvp npcdamage radiation buildingdamage building`
+  `!createcustomzone "Test" 10,10,10 45 box 150,150,150 1 1 0 1 1`
+  `!createcustomzone "Test" 10,10,10 45 sphere 150 1 1 0 1 1`
 
-• `!editcustomzone "ZoneName" "Setting" "Value"`
-  Examples: `!editcustomzone "Test" showarea 1`
-            `!editcustomzone "Test" color (255,0,255)`
-            `!editcustomzone "Test" radiationdamage 25`
+  `!editcustomzone "Test" enabled 0/1`
+  `!editcustomzone "Test" position 10,10,10`
+  `!editcustomzone "Test" rotation 45`
+  `!editcustomzone "Test" type box/sphere`
+  `!editcustomzone "Test" size 150,150,150 (box=150,150,150/`sphere=150)
+  `!editcustomzone "Test" allowpvpdamage 0/1`
+  `!editcustomzone "Test" allownpcdamage 0/1`
+  `!editcustomzone "Test" radiationdamage 0`
+  `!editcustomzone "Test" allowbuildingdamage 0/1`
+  `!editcustomzone "Test" allowbuilding 0/1`
+  `!editcustomzone "Test" showarea 0/1`
+  `!editcustomzone "Test" color 0,0,0/255,255,255`
+  `!editcustomzone "Test" showchatmessage 0/1`
+  `!editcustomzone "Test" entermessage "hello"`
+  `!editcustomzone "Test" leavemessage "by"`
 
 • `!customzoneinfo "ZoneName"`
 • `!listcustomzones`
@@ -365,9 +370,7 @@ async def on_message(message):
 • `!listmonumentkillzones`
 • `!clearmonumentkillzones`
 • `!setmonumentkillzone "monumentname" 0/1`
-  Example: `!setmonumentkillzone gas_station_1 1`
-• `!editmonumentzone "MonumentName" "Setting" "Value"`
-  Example: `!editmonumentzone "gas_station_1" "radiation" "25"`
+• `!editmonumentzone "gas_station_1" radiation 25`
 """
             await message.channel.send(help_text)
         
