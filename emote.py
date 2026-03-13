@@ -140,94 +140,94 @@ class EmoteManager:
         """Get list of ALL emotes"""
         return [
             # Combat slots
-    "d11_quick_chat_combat_slot_0", 
-    "d11_quick_chat_combat_slot_1", 
-    "d11_quick_chat_combat_slot_2", 
-    "d11_quick_chat_combat_slot_3", 
-    "d11_quick_chat_combat_slot_4", 
-    "d11_quick_chat_combat_slot_5", 
-    "d11_quick_chat_combat_slot_6", 
-    "d11_quick_chat_combat_slot_7",
-    
-    # Building slots
-    "d11_quick_chat_building_slot_0", 
-    "d11_quick_chat_building_slot_1", 
-    "d11_quick_chat_building_slot_2", 
-    "d11_quick_chat_building_slot_3", 
-    "d11_quick_chat_building_slot_4", 
-    "d11_quick_chat_building_slot_5", 
-    "d11_quick_chat_building_slot_6", 
-    "d11_quick_chat_building_slot_7",
-    
-    # Activities phrase format
-    "d11_quick_chat_activities_phrase_format d11_Stone",
-    "d11_quick_chat_activities_phrase_format d11_Wood",
-    "d11_quick_chat_activities_phrase_format d11_Metal",
-    "d11_quick_chat_activities_phrase_format d11_Food",
-    "d11_quick_chat_activities_phrase_format d11_Water",
-    "d11_quick_chat_activities_phrase_format d11_Scrap",
-    "d11_quick_chat_activities_phrase_format d11_Metal_Fragments",
-    "d11_quick_chat_activities_phrase_format d11_Medicine",
-    
-    # Questions slots
-    "d11_quick_chat_questions_slot_0", 
-    "d11_quick_chat_questions_slot_1", 
-    "d11_quick_chat_questions_slot_2", 
-    "d11_quick_chat_questions_slot_3", 
-    "d11_quick_chat_questions_slot_4", 
-    "d11_quick_chat_questions_slot_5", 
-    "d11_quick_chat_questions_slot_6", 
-    "d11_quick_chat_questions_slot_7",
-    
-    # Responses slots
-    "d11_quick_chat_responses_slot_0", 
-    "d11_quick_chat_responses_slot_1", 
-    "d11_quick_chat_responses_slot_2", 
-    "d11_quick_chat_responses_slot_3", 
-    "d11_quick_chat_responses_slot_4", 
-    "d11_quick_chat_responses_slot_5", 
-    "d11_quick_chat_responses_slot_6", 
-    "d11_quick_chat_responses_slot_7",
-    
-    # Orders slots
-    "d11_quick_chat_orders_slot_0", 
-    "d11_quick_chat_orders_slot_1", 
-    "d11_quick_chat_orders_slot_2", 
-    "d11_quick_chat_orders_slot_3", 
-    "d11_quick_chat_orders_slot_4", 
-    "d11_quick_chat_orders_slot_5", 
-    "d11_quick_chat_orders_slot_6", 
-    "d11_quick_chat_orders_slot_7",
-    
-    # Location slots
-    "d11_quick_chat_location_slot_0", 
-    "d11_quick_chat_location_slot_1", 
-    "d11_quick_chat_location_slot_2", 
-    "d11_quick_chat_location_slot_3", 
-    "d11_quick_chat_location_slot_4", 
-    "d11_quick_chat_location_slot_5", 
-    "d11_quick_chat_location_slot_6", 
-    "d11_quick_chat_location_slot_7", 
-    
-    # I need phrase format
-    "d11_quick_chat_i_need_phrase_format scrap",
-    "d11_quick_chat_i_need_phrase_format lowgradefuel",
-    "d11_quick_chat_i_need_phrase_format d11_Food",
-    "d11_quick_chat_i_need_phrase_format water",
-    "d11_quick_chat_i_need_phrase_format wood",
-    "d11_quick_chat_i_need_phrase_format stones",
-    "d11_quick_chat_i_need_phrase_format metal.fragments",
-    "d11_quick_chat_i_need_phrase_format metal.refined",
-    
-    # I have phrase format
-    "d11_quick_chat_i_have_phrase_format scrap",
-    "d11_quick_chat_i_have_phrase_format lowgradefuel",
-    "d11_quick_chat_i_have_phrase_format d11_Food",
-    "d11_quick_chat_i_have_phrase_format water",
-    "d11_quick_chat_i_have_phrase_format bow.hunting",
-    "d11_quick_chat_i_have_phrase_format pickaxe",
-    "d11_quick_chat_i_have_phrase_format hatchet",
-    "d11_quick_chat_i_have_phrase_format metal.refined"
+            "d11_quick_chat_combat_slot_0", 
+            "d11_quick_chat_combat_slot_1", 
+            "d11_quick_chat_combat_slot_2", 
+            "d11_quick_chat_combat_slot_3", 
+            "d11_quick_chat_combat_slot_4", 
+            "d11_quick_chat_combat_slot_5", 
+            "d11_quick_chat_combat_slot_6", 
+            "d11_quick_chat_combat_slot_7",
+            
+            # Building slots
+            "d11_quick_chat_building_slot_0", 
+            "d11_quick_chat_building_slot_1", 
+            "d11_quick_chat_building_slot_2", 
+            "d11_quick_chat_building_slot_3", 
+            "d11_quick_chat_building_slot_4", 
+            "d11_quick_chat_building_slot_5", 
+            "d11_quick_chat_building_slot_6", 
+            "d11_quick_chat_building_slot_7",
+            
+            # Activities phrase format
+            "d11_quick_chat_activities_phrase_format d11_Stone",
+            "d11_quick_chat_activities_phrase_format d11_Wood",
+            "d11_quick_chat_activities_phrase_format d11_Metal",
+            "d11_quick_chat_activities_phrase_format d11_Food",
+            "d11_quick_chat_activities_phrase_format d11_Water",
+            "d11_quick_chat_activities_phrase_format d11_Scrap",
+            "d11_quick_chat_activities_phrase_format d11_Metal_Fragments",
+            "d11_quick_chat_activities_phrase_format d11_Medicine",
+            
+            # Questions slots
+            "d11_quick_chat_questions_slot_0", 
+            "d11_quick_chat_questions_slot_1", 
+            "d11_quick_chat_questions_slot_2", 
+            "d11_quick_chat_questions_slot_3", 
+            "d11_quick_chat_questions_slot_4", 
+            "d11_quick_chat_questions_slot_5", 
+            "d11_quick_chat_questions_slot_6", 
+            "d11_quick_chat_questions_slot_7",
+            
+            # Responses slots
+            "d11_quick_chat_responses_slot_0", 
+            "d11_quick_chat_responses_slot_1", 
+            "d11_quick_chat_responses_slot_2", 
+            "d11_quick_chat_responses_slot_3", 
+            "d11_quick_chat_responses_slot_4", 
+            "d11_quick_chat_responses_slot_5", 
+            "d11_quick_chat_responses_slot_6", 
+            "d11_quick_chat_responses_slot_7",
+            
+            # Orders slots
+            "d11_quick_chat_orders_slot_0", 
+            "d11_quick_chat_orders_slot_1", 
+            "d11_quick_chat_orders_slot_2", 
+            "d11_quick_chat_orders_slot_3", 
+            "d11_quick_chat_orders_slot_4", 
+            "d11_quick_chat_orders_slot_5", 
+            "d11_quick_chat_orders_slot_6", 
+            "d11_quick_chat_orders_slot_7",
+            
+            # Location slots
+            "d11_quick_chat_location_slot_0", 
+            "d11_quick_chat_location_slot_1", 
+            "d11_quick_chat_location_slot_2", 
+            "d11_quick_chat_location_slot_3", 
+            "d11_quick_chat_location_slot_4", 
+            "d11_quick_chat_location_slot_5", 
+            "d11_quick_chat_location_slot_6", 
+            "d11_quick_chat_location_slot_7", 
+            
+            # I need phrase format
+            "d11_quick_chat_i_need_phrase_format scrap",
+            "d11_quick_chat_i_need_phrase_format lowgradefuel",
+            "d11_quick_chat_i_need_phrase_format d11_Food",
+            "d11_quick_chat_i_need_phrase_format water",
+            "d11_quick_chat_i_need_phrase_format wood",
+            "d11_quick_chat_i_need_phrase_format stones",
+            "d11_quick_chat_i_need_phrase_format metal.fragments",
+            "d11_quick_chat_i_need_phrase_format metal.refined",
+            
+            # I have phrase format
+            "d11_quick_chat_i_have_phrase_format scrap",
+            "d11_quick_chat_i_have_phrase_format lowgradefuel",
+            "d11_quick_chat_i_have_phrase_format d11_Food",
+            "d11_quick_chat_i_have_phrase_format water",
+            "d11_quick_chat_i_have_phrase_format bow.hunting",
+            "d11_quick_chat_i_have_phrase_format pickaxe",
+            "d11_quick_chat_i_have_phrase_format hatchet",
+            "d11_quick_chat_i_have_phrase_format metal.refined"
         ]
     
     def _load_configurations(self):
@@ -253,7 +253,7 @@ class EmoteManager:
             lines = f.readlines()
         
         current_section = None
-        time_value = '0'
+        time_value = '-1'   # default to disabled
         commands = []
         
         for line in lines:
@@ -274,7 +274,7 @@ class EmoteManager:
                 
                 # Start new section
                 current_section = line[1:-1]
-                time_value = '0'
+                time_value = '-1'
                 commands = []
             
             # Time setting
@@ -299,12 +299,12 @@ class EmoteManager:
         if not os.path.exists(self.EMOTES_FILE):
             print(f"Creating default emote configuration file: {self.EMOTES_FILE}")
             
-            # Create initial emotes data for ALL emotes
+            # Create initial emotes data for ALL emotes (all disabled)
             default_emotes_data = {}
             
             for emote in self.ALL_EMOTES:
                 default_emotes_data[emote] = {
-                    'time': '0',  # All disabled by default
+                    'time': '-1',   # disabled by default
                     'commands': []
                 }
             
@@ -322,7 +322,7 @@ class EmoteManager:
             # Building slot 1 (store position, 1 minute cooldown)
             if "d11_quick_chat_building_slot_1" in default_emotes_data:
                 default_emotes_data["d11_quick_chat_building_slot_1"] = {
-                    'time': '10',
+                    'time': '1',
                     'commands': ['printpos {player}']
                 }
             
@@ -333,32 +333,13 @@ class EmoteManager:
                     'commands': ['teleportpos {player}']
                 }
             
-            # Metal fragments request (30 minute cooldown)
-            if "d11_quick_chat_i_need_phrase_format metal.fragments" in default_emotes_data:
-                default_emotes_data["d11_quick_chat_i_need_phrase_format metal.fragments"] = {
-                    'time': '30',
-                    'commands': ['giveto {player} metal.fragments 1000']
-                }
-            
-            # Water request (20 minute cooldown)
-            if "d11_quick_chat_i_need_phrase_format water" in default_emotes_data:
-                default_emotes_data["d11_quick_chat_i_need_phrase_format water"] = {
-                    'time': '20',
-                    'commands': ['giveto {player} water 5']
-                }
-            
-            # Food request (20 minute cooldown)
-            if "d11_quick_chat_i_need_phrase_format d11_Food" in default_emotes_data:
-                default_emotes_data["d11_quick_chat_i_need_phrase_format d11_Food"] = {
-                    'time': '20',
-                    'commands': ['giveto {player} can.beans 10']
-                }
-            
-            # Scrap request (45 minute cooldown)
-            if "d11_quick_chat_i_need_phrase_format scrap" in default_emotes_data:
-                default_emotes_data["d11_quick_chat_i_need_phrase_format scrap"] = {
-                    'time': '45',
-                    'commands': ['giveto {player} scrap 500']
+            # Example: teleport to a fixed location with NO cooldown (time = 0)
+            if "d11_quick_chat_location_slot_0" in default_emotes_data:
+                default_emotes_data["d11_quick_chat_location_slot_0"] = {
+                    'time': '0',   # no cooldown
+                    'commands': [
+                        'teleportpos -0.68,39.86,44.64 {player}'
+                    ]
                 }
             
             # Save to file
@@ -372,7 +353,7 @@ class EmoteManager:
             f.write("# Emote Configuration File\n")
             f.write("# Format:\n")
             f.write("# [emote_name]\n")
-            f.write("# time = 60  # Cooldown in minutes (0 = disabled)\n")
+            f.write("# time = -1   # -1 = disabled, 0 = no cooldown, >0 = cooldown in minutes\n")
             f.write("# command1\n")
             f.write("# command2\n")
             f.write("# ...\n\n")
@@ -436,31 +417,32 @@ class EmoteManager:
         try:
             cooldown_minutes = int(self.emotes_data[emote_name]['time'])
         except ValueError:
-            cooldown_minutes = 0
+            cooldown_minutes = -1   # treat invalid as disabled
         
-        # If cooldown is 0, emote is disabled
-        if cooldown_minutes == 0:
-            print(f"Emote {emote_name} is disabled (cooldown=0)")
+        # If cooldown < 0, emote is disabled
+        if cooldown_minutes < 0:
+            print(f"Emote {emote_name} is disabled (time={cooldown_minutes})")
             return
         
         # Create a unique key for player+emote cooldown
         cooldown_key = f"{player_name}_{emote_name}"
         
-        # Check if player is on cooldown for this emote
-        if cooldown_key in self.emote_cooldowns:
-            last_request = self.emote_cooldowns[cooldown_key]
-            time_diff = current_time - last_request
-            
-            if time_diff < timedelta(minutes=cooldown_minutes):
-                # Still on cooldown
-                cooldown_left = timedelta(minutes=cooldown_minutes) - time_diff
-                minutes_left = int(cooldown_left.total_seconds() / 60)
-                seconds_left = int(cooldown_left.total_seconds() % 60)
+        # Check cooldown only if cooldown_minutes > 0 (zero = no cooldown)
+        if cooldown_minutes > 0:
+            if cooldown_key in self.emote_cooldowns:
+                last_request = self.emote_cooldowns[cooldown_key]
+                time_diff = current_time - last_request
                 
-                message = f"⏳ {player_name} used {emote_name} but has {minutes_left}m {seconds_left}s cooldown left."
-                print(message)
-                await self._send_to_logs(logs_channel, message)
-                return
+                if time_diff < timedelta(minutes=cooldown_minutes):
+                    # Still on cooldown
+                    cooldown_left = timedelta(minutes=cooldown_minutes) - time_diff
+                    minutes_left = int(cooldown_left.total_seconds() / 60)
+                    seconds_left = int(cooldown_left.total_seconds() % 60)
+                    
+                    message = f"⏳ {player_name} used {emote_name} but has {minutes_left}m {seconds_left}s cooldown left."
+                    print(message)
+                    await self._send_to_logs(logs_channel, message)
+                    return
         
         # Get commands from config
         commands = self.emotes_data[emote_name]['commands']
@@ -491,27 +473,36 @@ class EmoteManager:
                         self.current_printpos_player = player_name
                     
                 elif command.startswith('teleportpos'):
-                    # Teleport player to their stored coordinates
-                    coordinates = self.get_player_coordinates(player_name)
-                    if coordinates:
-                        formatted_command = f'teleportpos {coordinates} "{player_name}"'
+                    # Check if the formatted command already contains explicit coordinates
+                    coord_pattern = r'(-?\d+\.?\d*)\s*,\s*(-?\d+\.?\d*)\s*,\s*(-?\d+\.?\d*)'
+                    coord_match = re.search(coord_pattern, formatted_command)
+                    
+                    if coord_match:
+                        # Explicit coordinates found – use the command as is
                         if await rcon_listener.send_command(formatted_command):
                             commands_executed += 1
                             print(f"Executed command for {player_name}: {formatted_command}")
                     else:
-                        # Mark teleport as failed but don't send message yet
-                        teleport_failed = True
-                        # Don't count this as executed since it failed
-                        continue
+                        # No explicit coordinates – use stored coordinates
+                        coordinates = self.get_player_coordinates(player_name)
+                        if coordinates:
+                            teleport_cmd = f'teleportpos {coordinates} "{player_name}"'
+                            if await rcon_listener.send_command(teleport_cmd):
+                                commands_executed += 1
+                                print(f"Executed command for {player_name}: {teleport_cmd}")
+                        else:
+                            teleport_failed = True
+                            continue
                 else:
                     # Regular command (giveto, givedrop, etc.)
                     if await rcon_listener.send_command(formatted_command):
                         commands_executed += 1
                         print(f"Executed command for {player_name}: {formatted_command}")
             
-            # Only update cooldown if commands were successfully executed
+            # Only update cooldown if commands were successfully executed AND cooldown_minutes > 0
             if commands_executed > 0:
-                self.emote_cooldowns[cooldown_key] = current_time
+                if cooldown_minutes > 0:
+                    self.emote_cooldowns[cooldown_key] = current_time
                 
                 # Log the request
                 log_message = f"✅ {player_name} used {emote_name} at {current_time.strftime('%Y-%m-%d %H:%M:%S')} - executed {commands_executed} commands"
